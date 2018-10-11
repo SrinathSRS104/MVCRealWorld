@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  mvc5realworld:
+    image: ${DOCKER_REGISTRY}mvc5realworld
+    build:
+      context: .\MVC5RealWorld
+      dockerfile: Dockerfile
