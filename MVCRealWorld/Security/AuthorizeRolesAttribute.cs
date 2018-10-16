@@ -19,7 +19,9 @@ namespace MVCRealWorld.Security
 
         protected override bool AuthorizeCore(HttpContextBase httpContext)
         {
-            bool authorize = false; using (DemoDBEntities db = new DemoDBEntities())
+            bool authorize = false;
+
+            using (DemoDBEntities db = new DemoDBEntities())
             {
                 UserManager UM = new UserManager();
 
